@@ -10,8 +10,16 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+<<<<<<< HEAD
   - [Useful resources](#useful-resources)
 - [Author](#author)
+=======
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+>>>>>>> 429bf26a52a50714c436e840ddef36aa9e502f6f
 
 ## Overview
 
