@@ -24,12 +24,13 @@ const Social = () => {
 };
 
 const App = () => {
+  const date = new Date("August 16, 2021 12:30");
   return (
     <>
       <div className="App">
         <div className="App-countdown">
           <h1>We're launching soon</h1>
-          <Countdown />
+          <Countdown date={date} />
         </div>
         <div className="App-hills">
           <img src={Hills} alt="Hills" />
