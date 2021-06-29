@@ -28,12 +28,14 @@ module.exports = (env) => {
         {
           test: /\.css$/,
           use: [
-            isDev === true
-              ? "style-loader"
-              : {
-                  loader: MiniCSSExtractPlugin.loader,
-                },
-            "css-loader",
+            isDev === true ? "style-loader" : MiniCSSExtractPlugin.loader,
+            {
+              loader: "css-loader",
+              options: {
+                importLoaders: 1,
+              },
+            },
+            "postcss-loader",
           ],
         },
         {
@@ -49,6 +51,7 @@ module.exports = (env) => {
       new HtmlWebpackPlugin({
         template: "./public/index.html",
         filename: "./index.html",
+        favicon: "./public/favicon-32x32.png",
       }),
       new MiniCSSExtractPlugin({
         filename: "[name].css",
