@@ -1,7 +1,7 @@
 {
   "name": "launch-countdown-timer",
   "version": "0.0.1",
-  "description": "A launch countdown timer lightweight",
+  "description": "✨ A challenge from @frontendmentorio ✨",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --mode development",
