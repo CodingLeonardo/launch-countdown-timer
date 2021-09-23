@@ -24,7 +24,7 @@ const Social = () => {
 };
 
 const App = () => {
-  const date = new Date("August 16, 2021 12:30");
+  const date = new Date("August 16, 2022 12:30");
   return (
     <>
       <div className="App">

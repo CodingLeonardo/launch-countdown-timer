@@ -2,7 +2,7 @@
   "name": "launch-countdown-timer",
   "version": "0.0.1",
   "description": "✨ A challenge from @frontendmentorio ✨",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "webpack serve --mode development",
     "build": "webpack --mode production",
