@@ -1,0 +1,18 @@
+.Social {
+  display: flex;
+  position: relative;
+}
+
+.Social-link {
+  margin: 0 2.2em;
+}
+
+.Social-link img {
+  width: 2em;
+  height: 2em;
+}
+
+.Social-link:hover img {
+  filter: brightness(0) saturate(100%) invert(51%) sepia(51%) saturate(1031%)
+    hue-rotate(305deg) brightness(99%) contrast(98%);
+}

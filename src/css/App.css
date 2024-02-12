@@ -30,25 +30,12 @@
   height: 25vh;
 }
 
-.App-hills img {
+.App-hills__img {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.Social {
-  position: relative;
-}
-
-.Social-link {
-  margin: 0 2.2em;
-}
-
-.Social-link img {
-  width: 2em;
-  height: 2em;
 }
 
 @media screen and (max-width: 375px) {
