@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack serve --mode development",
     "build": "webpack --mode production",
-    "predeploy": " rm -R -f dist && yarn build",
+    "predeploy": "rm -R -f dist && yarn build",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
