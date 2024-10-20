@@ -11,29 +11,15 @@ const useCountdown = (dateTo) => {
   };
   const [timeLeft, setTimeLeft] = useState(initialState);
 
-  const initCountdown = useCallback(() => {
-    const { days, hours, minutes, seconds, time } = getTime(dateTo);
-
-    const timerUpdate = setInterval(() => {
-      setTimeLeft({
-        days,
-        hours,
-        minutes,
-        seconds,
-        time,
-      });
-
+  useEffect(() => {
+    const InternalId = setInterval(() => {
+      const { days, hours, minutes, seconds, time } = getTime(dateTo);
+      setTimeLeft({ days, hours, minutes, seconds, time });
       if (time <= 1) {
         setTimeLeft(initialState);
-        clearInterval(timerUpdate);
+        clearInterval(InternalId);
       }
     }, 1000);
-
-    return timerUpdate;
-  }, [timeLeft]);
-
-  useEffect(() => {
-    const InternalId = initCountdown();
     return () => clearInterval(InternalId);
   }, []);
 
