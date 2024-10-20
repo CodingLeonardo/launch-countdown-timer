@@ -6,7 +6,7 @@ import "./css/App.css";
 import Hills from "./images/pattern-hills.svg";
 
 const App = () => {
-  const date = new Date("August 16, 2024 12:30");
+  const date = new Date("August 16, 2025 12:30");
   return (
     <>
       <main className="App">
